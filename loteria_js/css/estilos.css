@@ -1,0 +1,32 @@
+body{
+    background-image: url(../img/descarga.jfif);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1{
+    color: rgb(255, 255, 255);
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: ;
+}
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+
+}
+
+.win-text {
+    color: green;
+}
+
+.lose-text {
+    color: red;
+}
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}

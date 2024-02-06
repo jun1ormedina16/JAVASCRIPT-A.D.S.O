@@ -1,0 +1,52 @@
+/* estilos_index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#welcomeContainer {
+    background-color: #f8f9fa; 
+    text-align: center;
+    padding: 20px;
+}
+
+#welcomeMessage {
+    font-size: 24px;
+    color: #333;
+    margin: 0;
+}
+
+#carouselContainer {
+    background-color: #fff; 
+    margin-top: 20px; 
+}
+
+.carousel {
+    max-width: 600px; 
+}
+
+.carousel-inner {
+    border-radius: 10px; 
+}
+
+.carousel-item {
+    text-align: center; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background-color: rgba(255, 255, 255, 0.8); 
+    border-radius: 5px; 
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #333; 
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    background-color: rgba(255, 255, 255, 1); 
+}

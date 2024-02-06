@@ -1,0 +1,27 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+.tarjeta {
+    border: 1px solid #ff0000;
+    padding: 16px;
+    margin: 16px;
+    width: 300px;
+    display: inline-block;
+    vertical-align: top; transition: transform 0.2s ease-in-out; 
+}
+
+.tarjeta:hover {
+    transform: translateY(-20px); 
+}
+
+.imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+p{
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+}

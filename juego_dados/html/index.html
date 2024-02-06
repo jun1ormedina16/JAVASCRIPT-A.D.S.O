@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Dados</title>
+    <link rel="stylesheet" href="../css/estilos.css">
+</head>
+<body>
+    <h1>Tirar los Dados</h1>
+    
+    <form id="dadosForm">
+        <label for="jugador1">Jugador 1</label>
+        <input type="text" id="jugador1" readonly>
+        <button type="button" onclick="lanzarDados('jugador1')">🎲 Lanzar Dados 🎲</button>
+        <br>
+        <label for="jugador2">Jugador 2</label>
+        <input type="text" id="jugador2" readonly>
+        <button type="button" onclick="lanzarDados('jugador2')">🎲 Lanzar Dados 🎲</button>
+        <br>
+        <button type="button" onclick="determinarGanador()">Determinar Ganador</button>
+      </form>
+      
+      <script>
+        function lanzarDados(jugador) {
+          var dado1 = Math.floor(Math.random() * 6) + 1;
+          var dado2 = Math.floor(Math.random() * 6) + 1;
+          var total = dado1 + dado2;
+      
+          document.getElementById(jugador).value = total;
+        }
+      
+        function determinarGanador() {
+          var puntajeJugador1 = parseInt(document.getElementById('jugador1').value, 10) || 0;
+          var puntajeJugador2 = parseInt(document.getElementById('jugador2').value, 10) || 0;
+      
+          if (puntajeJugador1 > puntajeJugador2) {
+            alert('¡Jugador 1 gana! 🎲 ');
+          } else if (puntajeJugador1 < puntajeJugador2) {
+            alert('¡Jugador 2 gana! 🎲 ');
+          } else {
+            alert('¡Es un empate!');
+          }
+        }
+      </script>
+  </body>
+</html>

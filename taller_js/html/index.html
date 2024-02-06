@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Taller JavaScript</title>
+    <script src="../js/script.js"></script>
+</head>
+<section>
+<body>
+    <div id="formContainer">
+        <h1>Calcular salario</h1>
+
+        <form id="salarioCalculatorForm">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="documento">Número de documento:</label>
+            <input type="text" id="documento" required>
+
+            <label for="salario">Sueldo mensual:</label>
+            <input type="number" id="salario" required>
+
+            <label for="dias">Días trabajados:</label>
+            <input type="number" id="dias" required>
+
+            <label for="horas">Horas Extra Nocturna:</label>
+            <input type="number" id="horas" required>
+
+            <button type="button" onclick="calculateAndShowInfo()">Calcular y Mostrar Información</button>
+        </form>
+    </div>
+</body>
+</section>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        alert("Bienvenido");
+        
+        let pedido = prompt("Digite el primer numero");
+        let pedido1 = prompt("Digite el segundo numero");
+        let num1 = parseFloat(pedido);
+        let num2 = parseFloat(pedido1);
+
+        if (isNaN(num1) || isNaN(num2)) {
+            alert("Por favor, ingrese números válidos.");
+        } else {
+            var suma = num1 + num2;
+            alert("La suma de " + num1 + " y " + num2 + " es igual a " + suma);
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>
